@@ -12,6 +12,9 @@ body {
   font-family: 'Fira Sans', sans-serif;
   color: var(--secondary-color);
 
+  /* Configura a margem para que não entre dentro do Nav */
+  padding-top: 100px;
+
   /* Scroll */
   overflow-y: scroll;
   scroll-behavior: smooth;
@@ -81,6 +84,13 @@ h2 {
   justify-content: center;
   margin: 2rem;
   padding: 1rem;
+  height: 35px;
+
+  /* Configurando para sempre ficar no topo */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1; /* O valor do z-index pode ser ajustado conforme necessário */
 }
 
 .nav-link {
@@ -89,7 +99,9 @@ h2 {
   margin: 0.5rem;
   font-weight: bold;
   font-size: 1rem;
-  color: rgba(255, 255, 255, 0.5);
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.75);
   cursor: pointer;
 
   &:hover {
@@ -180,3 +192,43 @@ h2 {
 }
 
 /* ------------- */
+
+/* Contato */
+form {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  box-sizing: border-box;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  height: 100px;
+}
+
+input[type="submit"] {
+  background-color: var(--gray-dark);
+  color: #fff;
+  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--primary-color);
+  }
+}

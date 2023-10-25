@@ -14,10 +14,10 @@
   <body>
     <!-- Navbar -->
     <nav id="top-nav">
-      <a class="nav-link" id="link-sobre">Sobre</a>
-      <a class="nav-link" id="link-formacao">Formação</a>
-      <a class="nav-link" id="link-portfolio">Portfólio</a>
-      <a class="nav-link" id="link-contato">Contato</a>
+      <button class="nav-link" id="link-sobre">Sobre</button>
+      <button class="nav-link" id="link-formacao">Formação</button>
+      <button class="nav-link" id="link-portfolio">Portfólio</button>
+      <button class="nav-link" id="link-contato">Contato</button>
     </nav>
 
     <!-- Conteúdo principal -->
@@ -47,6 +47,31 @@
           Estou comprometido em aprimorar minhas habilidades e continuar a
           explorar o emocionante universo da tecnologia.
         </p>
+
+        <!-- Links para redes sociais -->
+        <ul class="row-list" id="social-links">
+          <!-- Linkedin -->
+          <li>
+            <a
+              href="https://www.linkedin.com/in/victor-g-faria/"
+              target="_blank"
+              class="social-link"
+            >
+              <img src="./img/linkedin.svg" alt="Linkedin" />
+            </a>
+          </li>
+
+          <!-- GitHub -->
+          <li>
+            <a
+              href="https://github.com/Victor-GF/"
+              target="_blank"
+              class="social-link"
+            >
+              <img src="./img/github.svg" alt="GitHub" />
+            </a>
+          </li>
+        </ul>
       </section>
 
       <!-- Formação -->
@@ -112,14 +137,38 @@
           </div>
         </div>
 
+        <!-- Protótipo app OrganizeMe -->
+        <div class="card">
+          <div class="content">
+            <h3>Projeto Organize Me</h3>
+            <div class="subheading">DESIGN &bullet; FIGMA</div>
+            <p>
+              Protótipo interativo de alta fidelidade para um app de tarefas
+              pessoais, desenvolvido no FIgma.
+            </p>
+            <a
+              href="https://www.figma.com/proto/fAtFvx7GjTWZYetqkBYMGr/Prot%C3%B3tipo-App?page-id=0%3A1&type=design&node-id=1-52&viewport=-38%2C385%2C0.34&t=n2WNEwRhibAKw64u-1&scaling=scale-down&starting-point-node-id=1%3A12&mode=design"
+              target="_blank"
+              class="link"
+              >Acesse o protótipo Figma</a
+            >
+          </div>
+        </div>
+
         <!-- Cargo atual -->
         <div class="card">
           <div class="content">
             <h3>Assistente de Suporte Técnico Arcom</h3>
             <div class="subheading">Suporte técnico &bullet; Informática</div>
             <ul class="column-list">
-              <li>Trabalho com atendimento de suporte a representantes comerciais e motoristas de todo o Brasil</li>
-              <li>Configuramos os equipamentos para os colaboradores, tornando eficiente o ambiente de trabalho</li>
+              <li>
+                Trabalho com atendimento de suporte a representantes comerciais
+                e motoristas de todo o Brasil
+              </li>
+              <li>
+                Configuramos os equipamentos para os colaboradores, tornando
+                eficiente o ambiente de trabalho
+              </li>
             </ul>
           </div>
           <div class="date">Cargo atual</div>
@@ -130,30 +179,28 @@
       <section id="contato">
         <h2>Contato</h2>
 
-        <!-- Links para redes sociais -->
-        <ul class="row-list" id="social-links">
-          <!-- Linkedin -->
-          <li>
-            <a
-              href="https://www.linkedin.com/in/victor-g-faria/"
-              target="_blank"
-              class="social-link"
-            >
-              <img src="./img/linkedin.svg" alt="Linkedin" />
-            </a>
-          </li>
+        <!-- Formulário para contato -->
+        <form>
+          <h3>Entre em contato comigo</h3>
 
-          <!-- GitHub -->
-          <li>
-            <a
-              href="https://github.com/Victor-GF/"
-              target="_blank"
-              class="social-link"
-            >
-              <img src="./img/github.svg" alt="GitHub" />
-            </a>
-          </li>
-        </ul>
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required /><br /><br />
+
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" autocomplete="email" required /><br /><br />
+
+          <label for="mensagem">Mensagem:</label>
+          <textarea
+            id="mensagem"
+            name="mensagem"
+            rows="4"
+            cols="50"
+            required
+          ></textarea
+          ><br /><br />
+
+          <input type="submit" value="Enviar" />
+        </form>
       </section>
     </main>
   </body>
