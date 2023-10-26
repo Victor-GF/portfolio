@@ -24,54 +24,58 @@
     <main id="contents">
       <!-- Sobre -->
       <section id="sobre">
-        <h1>Victor Gomes Faria</h1>
-        <div class="subheading">
-          Uberlândia &bull; (34) 98849-6022 &bull;
-          <a class="link" href="mailto:contatovgf2021@gmail.com"
-            >contatovgf2021@gmail.com</a
-          >
+        <div id="sobre-content">
+          <h1>Victor Gomes Faria</h1>
+          <div class="subheading">
+            Uberlândia &bull; (34) 98849-6022 &bull;
+            <a class="link" href="mailto:contatovgf2021@gmail.com"
+              >contatovgf2021@gmail.com</a
+            >
+          </div>
+          <p>
+            Sou um entusiasta apaixonado da área de programação e Tecnologia da
+            Informação. Minha curiosidade por esse campo começou na
+            adolescência, impulsionada pela fascinação por jogos eletrônicos.
+          </p>
+          <p>
+            Ao longo dos anos, acumulei valiosa experiência no desenvolvimento
+            de jogos 3D, trabalhando com diversas game engines. Meus gêneros
+            favoritos de jogos são RPG e corrida, e minha paixão por eles
+            inspirou minha dedicação em estudar a criação de games e a intricada
+            mecânica das Game Engines.
+          </p>
+          <p>
+            Estou comprometido em aprimorar minhas habilidades e continuar a
+            explorar o emocionante universo da tecnologia.
+          </p>
+
+          <!-- Links para redes sociais -->
+          <ul class="row-list" id="social-links">
+            <!-- Linkedin -->
+            <li>
+              <a
+                href="https://www.linkedin.com/in/victor-g-faria/"
+                target="_blank"
+                class="social-link"
+              >
+                <img src="./img/linkedin.svg" alt="Linkedin" />
+              </a>
+            </li>
+
+            <!-- GitHub -->
+            <li>
+              <a
+                href="https://github.com/Victor-GF/"
+                target="_blank"
+                class="social-link"
+              >
+                <img src="./img/github.svg" alt="GitHub" />
+              </a>
+            </li>
+          </ul>
         </div>
-        <p>
-          Sou um entusiasta apaixonado da área de programação e Tecnologia da
-          Informação. Minha curiosidade por esse campo começou na adolescência,
-          impulsionada pela fascinação por jogos eletrônicos.
-        </p>
-        <p>
-          Ao longo dos anos, acumulei valiosa experiência no desenvolvimento de
-          jogos 3D, trabalhando com diversas game engines. Meus gêneros
-          favoritos de jogos são RPG e corrida, e minha paixão por eles inspirou
-          minha dedicação em estudar a criação de games e a intricada mecânica
-          das Game Engines.
-        </p>
-        <p>
-          Estou comprometido em aprimorar minhas habilidades e continuar a
-          explorar o emocionante universo da tecnologia.
-        </p>
 
-        <!-- Links para redes sociais -->
-        <ul class="row-list" id="social-links">
-          <!-- Linkedin -->
-          <li>
-            <a
-              href="https://www.linkedin.com/in/victor-g-faria/"
-              target="_blank"
-              class="social-link"
-            >
-              <img src="./img/linkedin.svg" alt="Linkedin" />
-            </a>
-          </li>
-
-          <!-- GitHub -->
-          <li>
-            <a
-              href="https://github.com/Victor-GF/"
-              target="_blank"
-              class="social-link"
-            >
-              <img src="./img/github.svg" alt="GitHub" />
-            </a>
-          </li>
-        </ul>
+        <img src="./img/self.jpg" alt="Victor Faria" id="self-img" />
       </section>
 
       <!-- Formação -->
@@ -187,7 +191,13 @@
           <input type="text" id="nome" name="nome" required /><br /><br />
 
           <label for="email">E-mail:</label>
-          <input type="email" id="email" name="email" autocomplete="email" required /><br /><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            autocomplete="email"
+            required
+          /><br /><br />
 
           <label for="mensagem">Mensagem:</label>
           <textarea

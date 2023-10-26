@@ -90,7 +90,8 @@ h2 {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1; /* O valor do z-index pode ser ajustado conforme necessário */
+  z-index: 1;
+  /* O valor do z-index pode ser ajustado conforme necessário */
 }
 
 .nav-link {
@@ -163,6 +164,27 @@ h2 {
 /* ---- */
 
 /* Sobre */
+#sobre {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+
+#sobre-content {
+  display: flex;
+  flex-direction: column;
+}
+
+#self-img {
+  max-width: 300px;
+  max-height: 300px;
+
+  border-radius: 50%;
+  border: 5px solid var(--primary-color);
+
+  align-self: center;
+}
+
 #social-links>li {
   display: inline-block;
   margin-right: 0.5rem;
@@ -232,3 +254,5 @@ input[type="submit"] {
     background-color: var(--primary-color);
   }
 }
+
+/* ------- */
