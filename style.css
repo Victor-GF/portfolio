@@ -7,16 +7,22 @@
   --gray-dark: #343a40;
   
   --side-nav-width: 15rem;
-  --large-screen: 850px;
 }
 
+* {
+  box-sizing: border-box;
+}
 
 body {
+  min-width: 360px;
+
   font-family: 'Fira Sans', sans-serif;
   color: var(--secondary-color);
   
   margin: 0;
   padding: 0;
+
+  overflow-x: hidden;
   
   /* Responsivo, ajusta para telas grandes */
   @media (min-width: 850px) {
